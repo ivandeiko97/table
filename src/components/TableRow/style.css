@@ -1,0 +1,32 @@
+.body-row {
+  background: #141418;
+  box-shadow: inset 0px -1px 0px #1E1E23;
+}
+
+.body-row__item {
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.body-row__item:not(:last-of-type):not(:first-of-type) {
+  padding-right: 24px;
+}
+
+.rating-number {
+  font-size: 14px;
+  line-height: 20px;
+  width: 32px;
+  color: #fff;
+}
+
+@media (max-width: 1130px) {
+  .body-row__item:not(:last-of-type):not(:first-of-type) {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 786px) {
+  .rating-number {
+    width: 16px;
+  }
+}

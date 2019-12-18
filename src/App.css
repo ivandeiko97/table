@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background: rgba(20, 20, 24, 0.001);
+  letter-spacing: 0.25px;
+  font-family: 'ProximaNova';
+}
+
+p, h3 {
+  margin: 0;
+}
