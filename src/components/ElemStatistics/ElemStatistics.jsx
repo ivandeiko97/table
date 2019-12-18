@@ -39,7 +39,7 @@ export default function ElemStatistics({ data, color }) {
           <div 
             className="gradient__blackElem"
             style={{
-              width: `${width.black}%`,
+              width: `${Math.abs(width.black)}%`,
             }}
           ></div>
         </div>
