@@ -50,7 +50,8 @@
 }
 
 .header__row .header__elemName:hover .header__title,
-.header__row .header__elemName:active .header__title {
+.header__row .header__elemName:active .header__title,
+.header__row .header__elemName:focus .header__title {
   visibility: visible;
 }
 

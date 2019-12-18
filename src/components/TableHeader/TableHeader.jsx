@@ -19,7 +19,7 @@ export default function TableHeader({ sort, sortInfo,stat }) {
                 onClick={() => sort(item.shortName)}
                 className="header__elemName"
               >
-                <div className="header__title">
+                <div className="header__title" aria-haspopup="true">
                   <p>{item.title}</p>
                 </div>
                 {item.shortName}
