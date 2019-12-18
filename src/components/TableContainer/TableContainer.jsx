@@ -13,6 +13,10 @@ export default class TableContainer extends Component {
     startElem: 0,
     statistics: [
       {
+        shortName: 'AT',
+        title: 'Air Time'
+      },
+      {
         shortName: 'HW',
         title: 'Hours Watched'
       },
@@ -23,10 +27,6 @@ export default class TableContainer extends Component {
       {
         shortName: 'ACCV',
         title: 'Avg Concurrent Viewers'
-      },
-      {
-        shortName: 'AT',
-        title: 'Air Time'
       },
       {
         shortName: 'VG',
