@@ -21,3 +21,20 @@ export function sortTable(arr, sortVal, mode) {
 function sortFunc (elem1, elem2, sortMode) {
   return sortMode ? elem1.value - elem2.value : elem2.value - elem1.value;
 }
+
+export function getWidth(diferent) {
+  let width = {};
+  let diferentSum;
+
+  if (diferent < 0) {
+    width.black = -50 + diferent;
+    diferentSum = 100 - Math.abs(width.black);
+    width.color = diferentSum < 0 ? 0 : diferentSum;
+    return width;
+  } 
+  width.color = 50 + diferent;
+  diferentSum = 100 - width.color;
+  width.black = diferentSum < 0 ? 0 : diferentSum;
+  
+  return width;
+}

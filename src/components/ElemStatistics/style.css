@@ -72,12 +72,6 @@
 
 @media (max-width: 1130px) {
   .statistics-elem {
-    width: 90px;
-  }
-}
-
-@media (max-width: 930px) {
-  .statistics-elem {
-    width: 70px;
+    width: 100px;
   }
 }

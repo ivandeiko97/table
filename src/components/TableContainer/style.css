@@ -50,14 +50,14 @@
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1000px) {
   .scroll-table {
     width: 100%;
     overflow-x: scroll;
   }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 540px) {
   .section-table__filter {
     display: none;
   }

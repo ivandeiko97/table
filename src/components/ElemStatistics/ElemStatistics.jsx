@@ -1,12 +1,15 @@
 import React from 'react';
 
 import './style.css';
+import { getWidth } from '../../utils';
 
 export default function ElemStatistics({ data, color }) {
   const {
     value,
     previousPeriodDiffPercentage,
   } = data;
+  
+  let width = getWidth(previousPeriodDiffPercentage);
 
   let styleArrow = {
     color: previousPeriodDiffPercentage < 0 ? "#FF574C" : '#4BFF58',
@@ -27,8 +30,18 @@ export default function ElemStatistics({ data, color }) {
         </div>
       </div>
       <div className="gradient">
-          <div className={`gradient__colorElem gradient__colorElem_${color}`}></div>
-          <div className="gradient__blackElem"></div>
+          <div 
+            className={`gradient__colorElem gradient__colorElem_${color}`}
+            style={{
+              width: `${width.color}%`,
+            }}
+          ></div>
+          <div 
+            className="gradient__blackElem"
+            style={{
+              width: `${width.black}%`,
+            }}
+          ></div>
         </div>
     </td>
   )

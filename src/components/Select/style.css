@@ -12,7 +12,7 @@
   margin: 0 10px;
 }
 
-@media (max-width: 505px) {
+@media (max-width: 540px) {
   .select {
     margin-left: 0;
   }
